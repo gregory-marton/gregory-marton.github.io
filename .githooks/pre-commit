@@ -1,0 +1,6 @@
+#!/bin/bash -e
+# hookDir=$(dirname $0)
+
+tidy -q index.html > /dev/null
+
+# Ensure ending newline.

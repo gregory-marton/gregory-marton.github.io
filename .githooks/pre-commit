@@ -1,6 +1,6 @@
 #!/bin/bash -e
-# hookDir=$(dirname $0)
-
-#tidy -qe index.html > /dev/null
+prec=$(realpath $0)
+hookDir=$(dirname $prec)
+python verify.py file://`dirname $hookDir`/index.html
 
 # Ensure ending newline.
